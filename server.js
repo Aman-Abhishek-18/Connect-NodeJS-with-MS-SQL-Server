@@ -1,9 +1,10 @@
 const sql = require("mssql");
 var config = {
-    server: "AMAN\\SQLEXPRESS", 
-    database: "FirstDB",
-    user: "sa",
-    password: "test123",
+    server: "TEST\\SQLEXPRESS", //When specifying the server name "TEST\SQLEXPRESS" in contexts like connection 
+    //strings or configurations, you need to use double backslashes (\\) 
+    database: "TestDB", // your database name
+    user: "sa",  // user name 
+    password: "test123", // password
     options: {
         trustedConnection: false, // Use false if using username and password
         encrypt: false, // Use false if not connecting to Azure
@@ -12,14 +13,11 @@ var config = {
     }
 };
 
-
 sql.connect(config, function(err) {
     if (err) {
         console.log("Connection error: ", err);
         return;
     }
-
-
     const request = new sql.Request();
     request.query("SELECT * FROM Animal_Identification where identificationNumber='123412341234'", function(err, result) {
         if (err) console.log("Query error: ", err);
