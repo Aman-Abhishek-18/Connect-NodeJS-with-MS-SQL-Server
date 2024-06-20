@@ -7,6 +7,12 @@
 
 Open environment variable and check if node.js and npm path is added or not
 
+![Screenshot 2024-06-20 203124](https://github.com/Aman-Abhishek-18/Connect-NodeJS-with-MS-SQL-Server/assets/70442464/7add5ac9-8dab-4d9d-949f-e31391670711)
+
+
+
+Open cmd and try running command node -v
+
 ![Screenshot 2024-06-20 195121](https://github.com/Aman-Abhishek-18/Connect-NodeJS-with-MS-SQL-Server/assets/70442464/3b5ff5a0-3283-4aff-b44f-7beef52fb24b)
 
 
